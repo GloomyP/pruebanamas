@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header {
+    background-color: #006f23;
+    height: 10.5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logotipo h2 {
+    position: fixed;
+    left: 45;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    width: 80;
+}
+
+.logotipo {
+    display: flex;
+    font-size: 0 50px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.logotipo h2 {
+    margin: 20px;
+    font-size: 40;
+    line-height: 30px;
+    color: white;
+    padding-left: 70px;
+}
+
+.logotipo img {
+    margin-right: 0px;
+    height: 76px;
+    width: 76px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+table{
+    width: 100%;
+    height: 89.5%;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+th, td{
+    border: solid 4px #006f23;
+    border-collapse: collapse;
+    
+}
+th{
+    color: black;
+    text-align: left;
+
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+
+}
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+/*.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: #848484;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    body{
+        padding-top: 70px;
+    }
+    .header {
+        height: 60px;
+  
+    }
+    .logotipo img{
+        height: 60px;
+        align-items: center;
+
+    }
+    .logotipo h2{
+        align-items: center;
+        margin: 20px;
+        font-size: 20;
+        line-height: 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #6a6a6a;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover, 
+    .nav-menu-link_active {
+
+        background: none;
+        color: #025b00;
+    }
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+        
+    }
+}
